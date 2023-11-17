@@ -16,6 +16,9 @@
       <div class="card">
         <%= link_to "#{list.name}", list_path(list)%>
       </div>
+      <div class="delete-card">
+       <%= link_to "Delete", root_path(list)%>
+      </div>
     <% end %>
   </div>
 </div>
