@@ -43,16 +43,36 @@
 
 .movie-info{
   display: flex;
-  margin-top: 10px;
-  padding: 10px
+  padding: 0px 10px;
+
+  p{
+    margin-right: 10px;
+  }
 }
 
 .movie-overview{
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: lighter;
+  padding: 0px 10px;
 }
+
 
 .modification{
   display: flex;
+  padding: 0px 10px;
+
+  p{
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+}
+
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -4,14 +4,13 @@
 
 <div class="container">
   <div class="composants-show">
-    <%= link_to "Add movie", new_list_bookmark_path(@list) %>
     <%= link_to "Back to my lists", root_path %>
   </div>
   <div class="parent">
     <% @bookmarks.each do |bookmark|%>
     <div class="cards" >
       <div class="movie-card">
-          <img src= <%= bookmark.movie.poster_url%> alt="">
+         <img src= <%= bookmark.movie.poster_url%> alt="">
         <div class="movie-info">
           <p><strong><%= bookmark.movie.title %></strong></p>
           <p><%= bookmark.movie.rating %></p>
@@ -20,11 +19,19 @@
           <p><%= bookmark.movie.overview %></p>
         </div>
         <div class="modification">
-          <p><%= bookmark.comment %></p>
+          <p><%= "'#{bookmark.comment}'" %></p>
           <%= link_to "Delete", bookmark_path(bookmark),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
         </div>
       </div>
     </div>
     <% end %>
   </div>
+
+  <div class="container">
+    <h4>New Movie</h4>
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+      <%= f.submit %>
+    <% end %>
 </div>

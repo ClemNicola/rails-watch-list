@@ -1,0 +1,48 @@
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px
+}
+
+label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.file-optional{
+  background-color: rgba(255, 228, 196, 0.899);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+  background-color: burlywood;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.224);
+  padding:10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+  &:hover{
+    background-color: rgba(222, 184, 135, 0.441);
+  }
+}
+
+.btn-form{
+  display: flex;
+  flex-grow: 1;
+  background-color: burlywood;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.224);
+  padding: 10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+  justify-content: center;
+
+  &:hover{
+    background-color: rgba(222, 184, 135, 0.441);
+  }
+}
