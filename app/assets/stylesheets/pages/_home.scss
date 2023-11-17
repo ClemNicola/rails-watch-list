@@ -1,1 +1,59 @@
 // Specific CSS for your home-page
+
+.container{
+  width: 100%;
+  margin: 0px auto;
+}
+
+.composants{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.composants h3{
+ font-size: 25px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.composants a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  background-color: cadetblue;
+  transition: 0.3s ease-in-out;
+
+  &:hover{
+    background-color: rgb(6, 64, 66);;
+  }
+}
+
+.parent{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width as needed */
+  gap: 15px;
+}
+
+
+.card{
+  background-image: url(https://picsum.photos/200/300);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  height: 250px;
+  display: flex;
+  border: 1px solid #ccc;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
